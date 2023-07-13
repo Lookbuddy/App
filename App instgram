@@ -1,0 +1,15 @@
+import random
+
+def generate_tags():
+  """Generates a random set of hashtags."""
+  tags = ["#fashion", "#food", "#travel", "#photography", "#art", "#design", "#music", "#fitness", "#beauty", "#lifestyle"]
+  return random.sample(tags, 10)
+
+def main():
+  """Generates and prints 10 random Instagram tags."""
+  tags = generate_tags()
+  for tag in tags:
+    print(tag)
+
+if __name__ == "__main__":
+  main()
